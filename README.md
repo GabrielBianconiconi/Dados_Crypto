@@ -6,7 +6,7 @@ Previsão de tendência (alta ou baixa) para Bitcoin (BTC), Ethereum (ETH) e Sol
 
 https://colab.research.google.com/drive/13nrQqhVYulvdQ3Ksn90l0UiuKOH0GnYv?usp=sharing
 
-Este projeto aplica técnicas de Machine Learning para prever a direção de preço das principais criptomoedas. A solução combina dados de mercado (obtidos via Yahoo Finance) e dados on-chain (via Blockchain.com API) com indicadores técnicos clássicos como RSI, MACD, EMA e Bandas de Bollinger.
+Este projeto aplica técnicas de Machine Learning para prever a direção de preço das principais criptomoedas. A solução combina dados de mercado (obtidos via Yahoo Finance) e dados on-chain (via Blockchain.com API) com indicadores técnicos clássicos.
 
 Além da modelagem, o projeto inclui uma aplicação web interativa feita em Streamlit, que permite visualizar gráficos atualizados e obter previsões em tempo real.
 
