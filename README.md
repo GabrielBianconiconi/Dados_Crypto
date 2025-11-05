@@ -24,7 +24,11 @@ Além da modelagem, o projeto inclui uma aplicação web interativa feita em Str
 
 ## ⚙️ Dados
 
+* Yahoo Finance API (via `yfinance`)
+* Blockchain.com API (via integração direta)
 
-  * Yahoo Finance API (via yfinance)
+## 🧑‍💻 Autores
 
-  * Blockchain.com API (via integração direta)
+* Carlos Alberto Matias da Costa
+* Bruno Augusto Lopes Fevereiro
+* Gabriel Bianconi
