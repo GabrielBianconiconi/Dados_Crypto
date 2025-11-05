@@ -41,6 +41,9 @@ O processo de treinamento (executado no script `train_models.py` ou no Notebook 
 
 ## ⚙️ Integrantes
 
+
 * Gabriel Bianconi 20.00822-8
 * Bruno Augusto 20.02194-0
 * Carlos Alberto Matias 20.01308-6
+
+* Artigo nos arquivos do github:
