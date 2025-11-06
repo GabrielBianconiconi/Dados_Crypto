@@ -4,8 +4,11 @@ Previsão de tendência (alta ou baixa) para Bitcoin (BTC), Ethereum (ETH) e Sol
 
 ## 🧠 Sobre o Projeto
 
-**Confira o Notebook Colab com o desenvolvimento e treinamento:**
-[https://colab.research.google.com/drive/13nrQqhVYulvdQ3Ksn90l0UiuKOH0GnYv?usp=sharing](https://colab.research.google.com/drive/13nrQqhVYulvdQ3Ksn90l0UiuKOH0GnYv?usp=sharing)
+Confira os principais ativos deste projeto:
+
+* 📹 **Vídeo de Apresentação:** [Assista no YouTube](https://youtube.com/watch?v=lO_6yA975iw&feature=youtu.be)
+* 📄 **Artigo Completo (PDF):** [Leia o artigo no repositório](https://github.com/GabrielBianconiconi/Dados_Crypto/blob/main/Previs%C3%A3o%20da%20Dire%C3%A7%C3%A3o%20de%20Criptomoedas%20Utilizando%20Dados%20de%20Mercado.pdf)
+* 💻 **Notebook Colab (Treinamento):** [Acesse o Colab](https://colab.research.google.com/drive/13nrQqhVYulvdQ3Ksn90l0UiuKOH0GnYv?usp=sharing)
 
 Este projeto aplica técnicas de Machine Learning para prever a direção de preço das principais criptomoedas. A solução combina dados de mercado (obtidos via Yahoo Finance) e dados on-chain (via Blockchain.com API) com indicadores técnicos clássicos.
 
@@ -30,20 +33,14 @@ O processo de treinamento (executado no script `train_models.py` ou no Notebook 
     * Busca os dados de mercado (OHLCV) do **Yahoo Finance** para todas as moedas.
     * **Se** a moeda for BTC, ele também chama a `fetch_onchain_data` para buscar dados da rede (ex: `n-transactions`, `hash-rate`) da API do **Blockchain.com**.
     * Funde os dados em um DataFrame único.
-
 2.  **`create_features_pipeline`**: Realiza a engenharia de features.
     * Calcula indicadores técnicos (RSI, MACD, Bandas de Bollinger, EMAs) usando `pandas-ta`.
     * Cria *features* de *lag* (atraso) e retorno (ex: `Close_lag_7`, `return_1d`) para dar ao modelo um contexto histórico.
-
 3.  **`train_and_save_model`**: Função principal que gerencia o treinamento.
     * **Validação (Teste 80/20):** Primeiro, treina um modelo temporário nos 80% dos dados e o testa nos 20%. Isso serve para gerar as métricas (Matriz de Confusão, Acurácia) e validar se a estratégia é viável.
 
-
 ## ⚙️ Integrantes
-
 
 * Gabriel Bianconi 20.00822-8
 * Bruno Augusto 20.02194-0
 * Carlos Alberto Matias 20.01308-6
-
-* Artigo nos arquivos do github:
